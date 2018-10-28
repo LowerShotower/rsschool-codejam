@@ -1,4 +1,4 @@
-function make(...arr) {
+module.exports = function make(...arr) {
     let tempArr = [];
     tempArr.push(arr[0]);
     var summ = 0;
@@ -17,9 +17,3 @@ function make(...arr) {
     }
     return tempF;
 }
-
-function sum(a, b) {
-    return a + b;
-}
-
-console.log(make(15)(34, 21, 666)(41)(sum));
